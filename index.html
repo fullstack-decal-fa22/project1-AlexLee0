@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang = "en-US">
+<head>
+    <title>My Personal Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <meta name="author" content = "Alex Lee">
+</head>
+<body>
+	<a name="top"></a>
+	<div id="tracker">
+		<ul id="trackerItem">
+            <li> <a href="#top" class="tasks">Home</a></li>
+			<li> <a href="#about" class="tasks">About</a></li>
+			<li> <a href="#projects" class="tasks">Projects</a></li>
+			<li> <a href="#contact" class="tasks">Contact</a></li>
+		</ul>
+	</div>
+	<div id="intro">
+		<p id="hello"> Hello! I am</p>
+		<h1 id="name">Alex Lee</h1>
+		<p id="welcome"> Welcome to my website</p>
+	</div>
+
+	<div id="about">
+		<div id="aboutContent">
+		<h2 class="header">ABOUT ME</h2>
+			<p class="contentText"> Hello, my name is Alex! I was born and raised in New York, but am attending University of California, Berkeley for my undergraduate studies. 
+                I am pursuing a double-major in Computer Science and Economics with a minor in Data Science because I enjoy taking creative, hands-on approaches to solving real-life problems.
+                When I am not stressing about academics, I like to spend my time playing the acoustic guitar or playing volleyball with my friends. 
+			</p>	
+		</div>	
+		<img src = "1641339964786.jpeg" alt="my pic" id ="aboutImage"> 
+	</div>
+
+
+	<div id="projects">
+        <h2 class="header">PROJECTS</h2>
+        <div id = "grid">
+            <div id="gitlet" class="oneproj">
+                <h3 class="projHeader">Simple Git</h3>
+                <h4 class="projText">For this project, I implemented a version-control system that replicated basic Git commands including init, commit, merge, branch, and checkout. </h4>
+            </div>
+            <div id="attaxx" class="oneproj">
+                <h3 class="projHeader">Attaxx</h3>
+                <h4 class="projText">For this project, I recreated the classic checkerboard game, Ataxx, and used game trees as well as alpha-beta pruning to implement the AI behind the computer player.</h4>
+            </div>
+            <div id="spam" class="oneproj">
+                <h3 class="projHeader">Spam or Ham</h3>
+                <h4 class="projText">For this project, I constructed a data pipeline to process email data and built a logistic regression cross-validation estimator to classify email as spam or ham.</h4>
+            </div>
+        </div>
+    </div>
+    <a href = "https://www.github.com/AlexLee0" target = _blank><img class = "links" id = "Github" src="25231.png" alt = "GitHub"></a>
+	<div id="contact">
+		<h2 class="header">CONTACTS</h2>
+		<h5 class="contentText">I hope you enjoyed my website! If you are interested in connecting with me, here are a few ways you can reach out.</h5>
+        <div id = "images">
+            <a href = "https://www.linkedin.com/in/alex-lee-a8bbba210/" target = _blank><img class = "links" src = "LinkedIn.png" alt = "LinkedIn"></a>
+            <a href = "mailto:alee1222@berkeley.edu"><img class = "links" src = "Gmail.jpeg" alt = "Gmail"></a>
+            <a href = "tel:9176489889"><img class = "links" src = "Phone.png" alt = "Phone"></a>
+        </div>
+    </div>
+    <div id = "form">
+    <h3 > Did you enjoy the website? </h3>	
+    <form id="submit">
+        <label>Type Yes or No</label><br><br>
+        <input id="yes" type="text">
+        <br>
+        <h6 id="response"></h6>
+        <input id="but" type="submit" onclick="func()">
+    </form>
+    <button onclick="alert('Thanks for reaching the end of my website. Have a great day!')">Surprise</button>
+</div>
+
+    
+
+    <script>
+        function func() {
+          var response = document.getElementById("yes").value;
+          if (response.toLowerCase() == "yes") {
+            document.getElementById("response").innerHTML = "Good Choice!"
+          } else {
+            document.getElementById("response").innerHTML = "Well that's awkward..."
+          }
+        }
+        </script>
+</body>
+</html>
