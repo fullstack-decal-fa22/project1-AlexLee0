@@ -1,2 +1,1 @@
-# project1-starter
-fullstack-decal-fa22.github.io
+https://github.com/fullstack-decal-fa22/project1-AlexLee0.git
